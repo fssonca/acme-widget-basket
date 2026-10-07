@@ -5,5 +5,5 @@ export default defineConfig({
   plugins: [react()],
   build: { outDir: "dist/web" },
   server: { proxy: { "/api": "http://localhost:3000" } },
-  test: { include: ["src/**/*.test.ts"], passWithNoTests: true },
+  test: { include: ["src/**/*.test.ts"] },
 });
